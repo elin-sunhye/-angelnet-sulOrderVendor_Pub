@@ -1,0 +1,41 @@
+<svg width="372" height="56" viewBox="0 0 372 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_518_1815)">
+<rect width="372" height="56" rx="10" fill="#25398F"/>
+<path d="M35.3204 30.0008C9.97665 30.0008 -2 35.4991 -5.5 38.5L-2.5 57C1.1547 54.1895 10.1456 35.8519 35.4534 37.2003C67.0883 38.8857 67.2773 46.9851 82.5336 49.7228C110.308 54.7068 128.311 48.5181 150.237 38.3087C196 17 206.15 42.0169 212 44.999L211.807 30.0418C206 23.0008 183 10.7002 150 25.0008C127.808 34.6179 111 43.5001 83.0001 40.0008C67.6197 38.0787 67.0001 30.0008 35.3204 30.0008Z" fill="white" fill-opacity="0.15"/>
+<path d="M41.3783 33.2882C16.2025 36.2012 -1.86885 50.1191 -5.00073 53.5024L-4.76104 58.5484C-1.45359 55.3365 17.0429 41.9941 42.338 40.4247C73.9569 38.4629 75.0756 46.4869 90.5454 47.4529C118.708 49.2115 133.891 36.9549 156.488 28.3326C187.5 16.4997 202.846 29.21 209 31.5L219.5 13C213.233 11.0406 185.5 5.50019 154.723 15.1402C131.642 22.3696 118.108 37.9994 89.8914 37.7417C74.3921 37.6001 72.8481 29.647 41.3783 33.2882Z" fill="white" fill-opacity="0.15"/>
+<path d="M221 3H361C365.418 3 369 6.58172 369 11V45C369 49.4183 365.418 53 361 53H181L221 3Z" fill="white"/>
+<circle cx="38" cy="22" r="5" fill="white" fill-opacity="0.3"/>
+<circle cx="142" cy="43" r="5" fill="white" fill-opacity="0.3"/>
+<circle cx="163" cy="9" r="5" fill="white" fill-opacity="0.3"/>
+<circle cx="188" cy="24" r="5" fill="white" fill-opacity="0.3"/>
+<circle cx="182" cy="28" r="5" fill="white" fill-opacity="0.3"/>
+<circle cx="142" cy="10" r="2" fill="white" fill-opacity="0.3"/>
+<circle cx="204" cy="14" r="2" fill="white" fill-opacity="0.3"/>
+<circle cx="29" cy="21" r="2" fill="white" fill-opacity="0.3"/>
+<circle cx="25" cy="7" r="2" fill="white" fill-opacity="0.3"/>
+<circle cx="30" cy="26" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="50" cy="35" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="88" cy="50" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="104" cy="35" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="6" cy="12" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="16" cy="26" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="18" cy="18" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="28" cy="8" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="67" cy="49" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="176" cy="12" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="177" cy="39" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="184" cy="6" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="160" cy="35" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="60" cy="51" r="1" fill="white" fill-opacity="0.3"/>
+<circle cx="43" cy="12" r="2" fill="white" fill-opacity="0.3"/>
+<circle cx="155" cy="45" r="2" fill="white" fill-opacity="0.3"/>
+<circle cx="48" cy="47" r="2" fill="white" fill-opacity="0.3"/>
+<circle cx="20" cy="52" r="2" fill="white" fill-opacity="0.3"/>
+<circle cx="39" cy="43" r="2" fill="white" fill-opacity="0.3"/>
+</g>
+<defs>
+<clipPath id="clip0_518_1815">
+<rect width="372" height="56" rx="10" fill="white"/>
+</clipPath>
+</defs>
+</svg>

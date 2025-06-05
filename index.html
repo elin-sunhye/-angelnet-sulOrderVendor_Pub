@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>퍼블리싱 현황</title>
+    <meta name="description" content="퍼블리싱 현황" />
+    <meta name="keywords" content="퍼블리싱 현황" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="퍼블리싱 현황" />
+    <meta property="og:description" content="퍼블리싱 현황" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <style>
+        *{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-size:13px;color:#1a1a1a;font-weight:normal;font-family: 'NanumSquare', sans-serif !important}
+        strong{font-weight:400}
+        body{padding-bottom: 50px;}
+        table{border-collapse:collapse;border-spacing:0;empty-cells:show;width:100%}
+        caption,legend{position:absolute;top:-9999px;left:-9999px;font-size:0;line-height:0}
+        a{text-decoration:none}
+        a:active{background-color:transparent}
+        .y{color:#337AFF}
+        .e{color:#FF337A}
+        .n{color:#A6ACAF}
+        h1{margin-bottom:10px;font-size:30px;font-weight:800}
+        th,td{border-top:1px solid #999;padding:10px;text-align:center}
+        th{background-color:#565656;font-weight:700;color:#fff}
+        th:last-child,td:last-child{border-right:none}
+        tr:last-child td,tr:last-child th{border-bottom:1px solid #999}
+        .container>div{width:90%;max-width:1200px;margin:0 auto}
+        .container>.tit{width:100%;max-width:100%;background-color:#242425;padding-top:30vh;padding-bottom:5vh;margin-bottom:50px}
+        .container>.tit>div{width:90%;max-width:1200px;margin:0 auto;font-size:0}
+        .container>.tit span{display:inline-block;color:#999;font-size:14px;line-height:24px}
+        .container>.tit span::after{content:"|";font-size:14px;display:inline-block;margin:0 8px;line-height:24px}
+        .container>.tit span:last-child::after{content:none}
+        .container .info{border:1px solid #999;padding:20px;box-sizing:border-box;border-radius:5px}
+        .container .info ul{border-left:1px solid #999;padding-left:4px}
+        .container .info li{list-style:none;text-indent:-13px;padding-left:13px;line-height: 20px;}
+        .container .info li+li{margin-top: 10px;}
+        .container .info li::before{content:"ㆍ"}
+        .container .info p{font-weight:400;margin-bottom:10px;font-size:14px;font-weight: bold}
+        .container .info ul+p{margin-top:25px}
+        h1{display:block;font-size:50px;letter-spacing:-1px;line-height:1.1;margin:0 auto;color:#fff;margin-bottom:10px;word-break:keep-all}
+        h2{font-size:20px;font-weight:700;line-height:1;margin-top:30px;margin-bottom:10px}
+        a{text-decoration:underline;vertical-align: top;}
+        a i{margin-left:3px}
+        i{font-size: 14px; vertical-align: top;}
+        @media screen and (max-width:768px) {
+        th,td,span{font-size:10px}
+        .pc{display:none}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tit">
+            <div>
+                <h1>술오더 모바일 퍼블리싱</h1>
+                <span>퍼블리싱</span>
+                <span>기간 : 2024.05.03 ~ 2024.05.28</span>
+                <span>언어 : HTML, CSS, Javascript(jQuery)</span>
+                <span>작업 환경 : 맥북프로(M1)</span>
+                <span>테스트 환경 : 맥북 프로(M1), 안드로이드(Fold4)</span>
+                <span>지원 및 테스트 브라우저 : 윈도우 크롬, 윈도우 엣지, 맥 사파리, 맥 크롬, 모바일 크롬, 모바일 사파리</span>
+                <span>라이브러리 : jQuery, Swiper</span>
+            </div>
+        </div>
+        <div>
+            <h2>퍼블리셔 코멘트</h2>
+            <div class="info">
+                <ul>
+                    <li>로고는 비슷한 폰트로 제가 넣어놨습니다. 폰트 라이센스는 확인하지 않았기 때문에 그대로 사용하실 경우 라이센스 검토가 필요합니다.</li>
+                    <li>폰트 : Gemunu Libre / 라이센스 : https://openfontlicense.org/</li>
+                    <li>메인페이지의 상품 카테고리 슬라이드 모달 뎁스 데모는 메인페이지 하단의 객체 데이터와 common.js의 setCateModalList함수의 동작 방식을 확인해주세요.</li>
+                    <li>슬라이드 모달 생성시 객체 데이터 name 값에 따라 랜더링 요소가 구분되어 있습니다. 추가하거나 삭제하실 때 해당 if 구문 수정해 주시면 됩니다.</li>
+                    <li>select는 슬라이드 모달로 기능 치환을 했습니다. open-select 클래스를 가진 엘리먼트 구조를 맞춰 주시면 됩니다. 첫번째 value가 ""인 값은 해당 슬라이드 모달의 제목이 되는 부분이니 생략하지 않으셔야 합니다.</li>
+                    <li>모든 스크립트는 사용하셔도 되지만 데모 구현 요소로 스크립트 동작 방식에 대한 수정은 지원해 드리지 않습니다.</li>
+                    <li>기타 문의는 언제든지 편하게 연락 부탁드립니다.</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h2>메인</h2>
+            <table>
+                <colgroup>
+                    <col style="width: auto;" />
+                    <col style="width: auto;" />
+                    <col style="width: 40%;" />
+                    <col style="width: 20%;" class="pc" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Depth1</th>
+                        <th scope="col">Depth2</th>
+                        <th scope="col">링크</th>
+                        <th scope="col" class="pc">비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>로그인</td>
+                        <td>로그인</td>
+                        <td class="url"><a href="#">login<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>도매상 선택</td>
+                        <td class="url"><a href="#">login-select<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td>메인</td>
+                        <td></td>
+                        <td class="url"><a href="#">main<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td>주문하기</td>
+                        <td></td>
+                        <td class="url"><a href="#">order<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td>조회하기</td>
+                        <td>리스트</td>
+                        <td class="url"><a href="#">status<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>상세</td>
+                        <td class="url"><a href="#">status-detail<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td>통계</td>
+                        <td></td>
+                        <td class="url"><a href="#">statics<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td>공지</td>
+                        <td></td>
+                        <td class="url"><a href="#">notice<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td>주판</td>
+                        <td></td>
+                        <td class="url"><a href="#">bill<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td>차입</td>
+                        <td></td>
+                        <td class="url"><a href="#">loan<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h2>사원주문</h2>
+            <table>
+                <colgroup>
+                    <col style="width: auto;" />
+                    <col style="width: auto;" />
+                    <col style="width: 40%;" />
+                    <col style="width: 20%;" class="pc" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Depth1</th>
+                        <th scope="col">Depth2</th>
+                        <th scope="col">링크</th>
+                        <th scope="col" class="pc">비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>거래처 리스트</td>
+                        <td></td>
+                        <td class="url"><a href="#">staff-partners<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td>거래처 상세</td>
+                        <td></td>
+                        <td class="url"><a href="#">staff-partners-detail<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td>주문조회</td>
+                        <td>업소조회</td>
+                        <td class="url"><a href="#">staff-status-partners<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>상품조회</td>
+                        <td class="url"><a href="#">staff-status-product<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호 변경</td>
+                        <td></td>
+                        <td class="url"><a href="#">change-password<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h2>주류몰</h2>
+            <table>
+                <colgroup>
+                    <col style="width: auto;" />
+                    <col style="width: auto;" />
+                    <col style="width: 40%;" />
+                    <col style="width: 20%;" class="pc" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Depth1</th>
+                        <th scope="col">Depth2</th>
+                        <th scope="col">링크</th>
+                        <th scope="col" class="pc">비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>상품 목록</td>
+                        <td></td>
+                        <td class="url"><a href="#">mall-list<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                    <tr>
+                        <td>상품 목록</td>
+                        <td></td>
+                        <td class="url"><a href="#">mall-detail<i class="y xi-check-circle"></i></a></td>
+                        <td class="pc"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.container div').find('tr').each(function () {
+                var link = $(this).find('.url a').text();
+                $(this).find('.url a').attr('href', './' + link + '.html');
+                $(this).find('.url-blank a').attr('href', './' + link + '.html');
+            });
+        });
+    </script>
+</body>
+
+</html>

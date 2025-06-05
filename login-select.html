@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
+    <title>술오더</title>
+    <meta name="description" content="술오더" />
+    <meta name="keywords" content="술오더" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/og.png" />
+    <meta property="og:title" content="술오더" />
+    <meta property="og:description" content="술오더" />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/response.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <script src="./js/swiper.8.4.7.js"></script>
+    <script src="./js/jquery.3.1.1.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="container">
+            <div class="login">
+                <div class="login__box">
+                    <img class="login__intro-img" src="./img/assets/img-intro.jpg" alt="술오더">
+                    <div class="login-select">
+                        <p class="login-select__copy">거래중인 도매상을 선택해주세요.</p>
+                        <div class="login-select__select open-select">
+                            <button type="button" class="login-select__select-btn open-select__btn">도매상 선택</button>
+                            <div class="hidden">
+                                <select class="open-select__list" id="select-company">
+                                    <option value="">주종선택</option>
+                                    <option value="(주)삼정주판">(주)삼정주판</option>
+                                    <option value="(주)동양주류">(주)동양주류</option>
+                                    <option value="(유)우일상사">(유)우일상사</option>
+                                    <option value="(주)두산상사">(주)두산상사</option>
+                                    <option value="(주)송림주류">(주)송림주류</option>
+                                    <option value="(주)영주물산">(주)영주물산</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="login-select__btn-wrap">
+                            <button type="button" class="login-select__btn btn-basic btn-large btn-main">확인</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-alert">
+                    <div class="modal-alert__cont">
+                        <p class="modal-alert__text"><strong>노가리집</strong> 님
+                            <br/>주류주문서비스에 오신것을 환영합니다.</p>
+                        <ul class="modal-alert__list">
+                            <li class="modal-alert__item">거래도매상명 : (주)동양주류</li>
+                            <li class="modal-alert__item">최근접속일시 : 2024-01-12  43:18:32</li>
+                            <li class="modal-alert__item">최근주문일시 : 2024-01-16  23:21:55</li>
+                        </ul>
+                        <button type="button" class="modal-alert__btn">확인</button>
+                    </div>
+                </div>
+                <div class="login__banner">
+                    <a href="#"><img src="./img/assets/img-kakao-banner.jpg" alt="카카오 플러스친구"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/common.js"></script>
+    <script>
+        // 모달 알럿 데모
+        $(document).on("click", ".login-select__btn", function () {
+            $('.modal-alert').addClass('open')
+        });
+    </script>
+    
+</body>
+
+</html>

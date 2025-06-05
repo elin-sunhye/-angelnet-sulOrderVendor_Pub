@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
+        <title>술오더</title>
+        <meta name="description" content="술오더" />
+        <meta name="keywords" content="술오더" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./img/og.png" />
+        <meta property="og:title" content="술오더" />
+        <meta property="og:description" content="술오더" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/response.css" />
+        <link rel="stylesheet" href="./css/swiper.css" />
+        <script src="./js/swiper.8.4.7.js"></script>
+        <script src="./js/jquery.3.1.1.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap" class="main">
+            <!-- 헤더 -->
+            <div id="header" class="header main">
+                <a href="#" class="haeder__logo">
+                    <img
+                        class="haeder__logo-img"
+                        src="./img/assets/logo-full.svg"
+                        alt="sul order"
+                    />
+                </a>
+                <button
+                    type="button"
+                    class="haeder__menu-btn"
+                    title="메뉴"
+                ></button>
+                <div class="menu">
+                    <div class="block-menu">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img
+                                    src="./img/assets/img-profile.svg"
+                                    class="profile-img__img"
+                                    alt="프로필 이미지"
+                                />
+                            </div>
+                            <div>
+                                <p class="profile__name">오비일번지님</p>
+                                <p class="profile__greeting">
+                                    주류주문서비스에 오신 것을 환영합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="partner-profile">
+                            <p class="partner-profile__partner">
+                                거래도매상명 : (주)삼정주판
+                            </p>
+                            <a
+                                href="tel:00000000000"
+                                class="partner-profile__phone"
+                                >전화연결</a
+                            >
+                        </div>
+                        <div class="menu-nav">
+                            <a
+                                class="menu-nav__btn btn-basic btn-large btn-sub"
+                                href="#"
+                                >주류주문</a
+                            >
+                            <a
+                                class="menu-nav__btn btn-basic btn-large btn-main"
+                                href="#"
+                                >주류마켓</a
+                            >
+                        </div>
+                    </div>
+                    <div class="block-menu">
+                        <div class="menu-list">
+                            <p class="menu-list__title">관련 서비스</p>
+                            <ul class="menu-list__list">
+                                <li class="menu-list__item">
+                                    <a href="#" class="menu-list__link"
+                                        >주류마켓 관련 메뉴1</a
+                                    >
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#" class="menu-list__link"
+                                        >주류마켓 관련 메뉴2</a
+                                    >
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#" class="menu-list__link"
+                                        >주류마켓 관련 메뉴3</a
+                                    >
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#" class="menu-list__link"
+                                        >주류마켓 관련 메뉴4</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block-menu">
+                        <div class="menu-list">
+                            <p class="menu-list__title">내 정보 관리</p>
+                            <ul class="menu-list__list">
+                                <li class="menu-list__item">
+                                    <a href="#" class="menu-list__link"
+                                        >비밀번호 변경</a
+                                    >
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#" class="menu-list__link"
+                                        >로그아웃</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block-menu block-menu--last">
+                        <div class="menu-list">
+                            <ul class="menu-list__list">
+                                <li class="menu-list__item">
+                                    <button
+                                        type="button"
+                                        class="menu-list__link"
+                                    >
+                                        앱종료
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 컨텐츠 -->
+            <div id="container">
+                <div class="content">
+                    <!-- 메인 광고 -->
+                    <section class="sec-main-top">
+                        <div class="com-wrapper"></div>
+                        <div class="main-slide-banner">
+                            <div class="com-wrapper">
+                                <div class="main-slide-banner__slider">
+                                    <div
+                                        class="main-slide-banner__slider-wrap swiper-container"
+                                    >
+                                        <ul class="swiper-wrapper">
+                                            <li
+                                                class="main-slide-banner__item swiper-slide"
+                                            >
+                                                <a href="#"
+                                                    ><img
+                                                        class="main-slide-banner__img"
+                                                        src="./img/assets/img-main-banner-demo-pink.svg"
+                                                        alt="배너1"
+                                                /></a>
+                                            </li>
+                                            <li
+                                                class="main-slide-banner__item swiper-slide"
+                                            >
+                                                <a href="#"
+                                                    ><img
+                                                        class="main-slide-banner__img"
+                                                        src="./img/assets/img-main-banner-demo-brown.svg"
+                                                        alt="배너2"
+                                                /></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="fraction">
+                                        <span class="fraction__current">0</span>
+                                        <span>/</span>
+                                        <span class="fraction__total">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 공지 -->
+                    <section class="sec-main-notice">
+                        <div class="com-wrapper">
+                            <div class="sec-title">
+                                <h2 class="sec-title__title">공지</h2>
+                            </div>
+                            <ul class="main-board__list">
+                                <li class="main-board__item">
+                                    <a class="main-board__link" href="#"
+                                        ><span class="main-board__title"
+                                            >6월 3일 국민 투표 선거일로
+                                            쉽니다.</span
+                                        >
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- 주류주문 버튼 -->
+                    <section class="sec-main-order">
+                        <div class="com-wrapper">
+                            <div class="main-order">
+                                <span class="main-order__bg">
+                                    <img
+                                        src="./img/assets/img-btn-main-order.svg"
+                                        alt="배너1"
+                                    />
+                                </span>
+                                <div class="main-order__link">
+                                    <a
+                                        href="./order.html"
+                                        class="main-order__order"
+                                    >
+                                        주류주문
+                                    </a>
+                                    <a
+                                        href="./main.html"
+                                        class="main-order__today"
+                                    >
+                                        금일 주문 5건
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 신규, 마켓 버튼 -->
+                    <section class="sec-main-go">
+                        <div class="com-wrapper">
+                            <div class="main-go">
+                                <a href="./main.html" class="main-go__new">
+                                    <p>
+                                        신규상품
+                                        <span
+                                            >최신 주류상품을
+                                            <br />만나보세요.</span
+                                        >
+                                    </p>
+                                    <span>
+                                        <img
+                                            src="./img/assets/ico-new-product.svg"
+                                            alt="배너1"
+                                        />
+                                    </span>
+                                </a>
+                                <a href="./main.html" class="main-go__market">
+                                    <p>
+                                        주류마켓
+                                        <span
+                                            >모든 주류상품을
+                                            <br />만나보세요.</span
+                                        >
+                                    </p>
+                                    <span>
+                                        <img
+                                            src="./img/assets/ico-market.svg"
+                                            alt="배너1"
+                                        />
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 하단 광고 -->
+                    <section class="sec-main-banner">
+                        <div class="main-banner-slider">
+                            <div
+                                class="main-banner-slider-wrap swiper-container"
+                            >
+                                <ul class="swiper-wrapper">
+                                    <li
+                                        class="main-banner-slider__item swiper-slide"
+                                    >
+                                        <img
+                                            class="main-banner-slider__img"
+                                            src="./img/assets/img-banner-btm-demo01.jpg"
+                                            alt="배너 데모"
+                                        />
+                                    </li>
+                                    <li
+                                        class="main-banner-slider__item swiper-slide"
+                                    >
+                                        <img
+                                            class="main-banner-slider__img"
+                                            src="./img/assets/img-banner-btm-demo02.jpg"
+                                            alt="배너 데모"
+                                        />
+                                    </li>
+                                    <li
+                                        class="main-banner-slider__item swiper-slide"
+                                    >
+                                        <img
+                                            class="main-banner-slider__img"
+                                            src="./img/assets/img-banner-btm-demo01.jpg"
+                                            alt="배너 데모"
+                                        />
+                                    </li>
+                                    <li
+                                        class="main-banner-slider__item swiper-slide"
+                                    >
+                                        <img
+                                            class="main-banner-slider__img"
+                                            src="./img/assets/img-banner-btm-demo02.jpg"
+                                            alt="배너 데모"
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dots"></div>
+                        </div>
+                    </section>
+
+                    <!-- 거래중인 도매장 -->
+                    <section class="sec-main-transaction">
+                        <div class="com-wrapper">
+                            <div class="main-transaction">
+                                <div class="main-transaction__title">
+                                    <h6>
+                                        거래중인 도매장
+                                        <button>
+                                            2곳
+                                            <img
+                                                src="./img/assets/ico-arrow-right.svg"
+                                                alt="화살표"
+                                            />
+                                        </button>
+                                    </h6>
+
+                                    <div class="sec-title">
+                                        <h2 class="sec-title__title">
+                                            A/S 신청
+                                        </h2>
+                                    </div>
+                                </div>
+
+                                <div class="main-transaction__info">
+                                    <p><span>도매장명</span>OOOO 종합 주류</p>
+                                    <p>
+                                        <span>대표전화</span>051-123-2811
+                                        <span>담당전화</span> 010-1234-0001
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- 푸터 -->
+            <div id="footer" class="footer">
+                <ul class="footer__menu">
+                    <li>
+                        <a href="./main.html">개인정보 처리방침</a>
+                    </li>
+                    <li>
+                        <a href="./main.html">회원이용약관</a>
+                    </li>
+                    <li>
+                        <a href="./main.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./main.html">고객센터</a>
+                    </li>
+                </ul>
+                <div class="footer__info">
+                    <p>
+                        <span
+                            ><img
+                                src="./img/assets/ico-sulorder.svg"
+                                alt="술오더 아이콘"
+                        /></span>
+                        SUL ORDER
+                    </p>
+                    <p>고객센터 운영시간 : 월~금 10~18시</p>
+                    <p>ⓒ 2025. 술오더. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/common.js"></script>
+    </body>
+</html>
