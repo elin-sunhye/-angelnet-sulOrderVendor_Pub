@@ -496,16 +496,16 @@
 }
 .basket__num li {
     width: calc(100% / 12);
-    border-radius: 5px;
-    overflow: hidden;
 }
 .basket__num li button {
     width: 100%;
     background-color: #f9f9f9;
     aspect-ratio: 1 / 1.1;
-    border: #dfdfdf;
-    font-weight: 800;
+    border: 1px solid #dfdfdf;
+    font-weight: 600;
     font-size: 16px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 .basket__num li:not(:last-of-type) button {
     font-size: 18px;
@@ -798,18 +798,17 @@
     border-radius: 4px;
     border: 1px solid #dfdfdf;
     color: #333;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 800;
     transition: All 0.2s ease-out;
+    background-color: #f9f9f9;
     -webkit-transition: All 0.2s ease-out;
     -moz-transition: All 0.2s ease-out;
     -o-transition: All 0.2s ease-out;
 }
-
-.letter-filter__item.btn-letter-shift {
-    grid-column: 1 / span 2;
+.letter-filter__item:last-of-type {
+    font-size: 16px;
 }
-
 .letter-filter__item.active {
     color: #fff;
     background-color: #2a47bf;
