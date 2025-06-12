@@ -403,7 +403,7 @@
 .product-basket__item.on {
     border-bottom: none;
     position: relative;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
 }
 /* .product-basket__item:last-child {
     border-bottom: none;
@@ -488,7 +488,7 @@
     width: 100%;
     position: absolute;
     left: 50%;
-    bottom: -100%;
+    bottom: -77%;
     transform: translateX(-50%);
     padding: 0 20px;
     box-sizing: border-box;
