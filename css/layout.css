@@ -52,6 +52,12 @@
     background-image: url(../img/assets/ico-setting.svg);
 }
 
+.main.mall .haeder__menu-btn {
+    left: 20px;
+    right: unset;
+    background-image: url(../img/assets/ico-home.svg);
+}
+
 .open .haeder__menu-btn {
     background-image: url(../img/assets/ico-btn-close-menu.svg);
 }
