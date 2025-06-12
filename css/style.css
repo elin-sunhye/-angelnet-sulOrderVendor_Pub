@@ -127,16 +127,18 @@
     font-weight: 800;
 }
 
-/* 신규, 마켓 버튼 */
+/* 버튼 */
 .main-go {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .main-go > a {
-    width: 49%;
+    width: calc((100% - 10px) / 2);
     height: 90px;
     background-color: #fff;
     border-radius: 10px;
