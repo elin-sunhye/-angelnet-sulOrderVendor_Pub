@@ -1,7 +1,21 @@
-/* @media screen and (min-width: 500px) {
-    .basket__num {
-        left: 0;
-        transform: translateX(0);
-        width: 500px;
+@media screen and (max-width: 400px) {
+    .basket-foot__data span {
+        margin: 10px;
     }
-} */
+}
+@media screen and (max-width: 364px) {
+    .basket-foot__item {
+        margin-right: 15px;
+    }
+    .basket-foot__data span {
+        margin: 3px;
+    }
+}
+@media screen and (max-width: 349px) {
+    .basket-foot__item {
+        margin-right: 5px;
+    }
+    .basket-foot__data span {
+        margin: 1px;
+    }
+}
