@@ -58,18 +58,30 @@
     background-image: url(../img/assets/ico-home.svg);
 }
 
-.open .haeder__menu-btn {
-    background-image: url(../img/assets/ico-btn-close-menu.svg);
-}
-
 .haeder__back-btn {
-    width: 35px;
-    height: 35px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    aspect-ratio: 1 / 1;
     background-image: url(../img/assets/ico-btn-back.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    transform: translateX(-10px);
+    transition: All 0.1s ease-out;
+    -webkit-transition: All 0.1s ease-out;
+    -moz-transition: All 0.1s ease-out;
+    -o-transition: All 0.1s ease-out;
+}
+.main.product-detail .haeder__back-btn {
+    left: 20px;
+    right: unset;
+    background-image: url(../img/assets/ico-btn-back.svg);
+}
+
+.open .haeder__menu-btn {
+    background-image: url(../img/assets/ico-btn-close-menu.svg);
 }
 
 .haeder__search-btn {
