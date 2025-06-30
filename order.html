@@ -75,32 +75,36 @@
                     </div>
 
                     <div class="fit-cont">
+                        <!-- 주문서 타이틀 -->
+                        <div class="cont-block block-shadow-top">
+                            <div class="product-basket__item">
+                                <div class="product-basket__left">
+                                    <p class="product-basket__title">상품명</p>
+                                    <p class="product-basket__option">
+                                        용도 / 용량 / 본입수
+                                    </p>
+                                </div>
+                                <div class="product-basket__right">
+                                    <div class="product-basket__quan quantity">
+                                        <div
+                                            class="product-basket__quan-field__title"
+                                        >
+                                            BOX
+                                        </div>
+                                        <div
+                                            class="product-basket__quan-field__title"
+                                        >
+                                            BON
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- 주문서 -->
                         <div
                             class="cont-block block-shadow-top block-shadow-btm"
                         >
-                            <!-- <div class="data-head">
-                                <div class="data-head__left">
-                                    <p class="data-head__title">품목</p>
-                                    <p class="data-head__desc">
-                                        용도/용량/본수
-                                    </p>
-                                </div>
-                                <div class="data-head__right">
-                                    <button
-                                        type="button"
-                                        class="btn-border btn-small"
-                                    >
-                                        수량초기화
-                                    </button>
-                                    <button
-                                        type="button"
-                                        class="btn-open-add-prd btn-basic btn-small btn-main"
-                                    >
-                                        품목추가
-                                    </button>
-                                </div>
-                            </div> -->
                             <div class="product-basket">
                                 <ul class="product-basket__list">
                                     <li class="product-basket__item">
@@ -846,38 +850,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cont-block">
-                        <!-- <div class="data-head">
-                            <div class="data-head__left">
-                                <p class="data-head__title">품목</p>
-                                <p class="data-head__desc">용도/용량/본수</p>
+                    <!-- 주문서 타이틀 -->
+                    <div class="cont-block block-shadow-btm">
+                        <div class="product-basket__item">
+                            <div class="product-basket__left">
+                                <p class="product-basket__title">상품명</p>
+                                <p class="product-basket__option">
+                                    용도 / 용량 / 본입수
+                                </p>
                             </div>
-                            <div class="data-head__right">
-                                <div class="data-head__sort">
-                                    <button
-                                        type="button"
-                                        data-sort="all"
-                                        class="data-head__sort-item current"
+                            <div class="product-basket__right">
+                                <div class="product-basket__quan quantity">
+                                    <div
+                                        class="product-basket__quan-field__title"
                                     >
-                                        전체
-                                    </button>
-                                    <button
-                                        type="button"
-                                        data-sort="kart"
-                                        class="data-head__sort-item"
+                                        BOX
+                                    </div>
+                                    <div
+                                        class="product-basket__quan-field__title"
                                     >
-                                        카트
-                                    </button>
-                                    <button
-                                        type="button"
-                                        data-sort="etc"
-                                        class="data-head__sort-item"
-                                    >
-                                        기타
-                                    </button>
+                                        BON
+                                    </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                    </div>
+
+                    <div class="cont-block">
                         <div class="product-basket">
                             <ul class="product-basket__list">
                                 <li class="product-basket__item on">
@@ -1344,8 +1343,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="layer-page__fixed-btn">
+                <!-- <div class="layer-page__fixed-btn">
                     <a href="#" class="btn-trisection btn-large btn-main"
+                        >선택완료</a
+                    >
+                </div> -->
+                <div class="fixed-btn">
+                    <a href="#" class="btn-basic btn-large btn-main"
                         >선택완료</a
                     >
                 </div>

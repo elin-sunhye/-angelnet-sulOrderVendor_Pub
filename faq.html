@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
+        <title>술오더</title>
+        <meta name="description" content="술오더" />
+        <meta name="keywords" content="술오더" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./img/og.png" />
+        <meta property="og:title" content="술오더" />
+        <meta property="og:description" content="술오더" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/devices/mobile.css" />
+        <link rel="stylesheet" href="./css/swiper.css" />
+        <script src="./js/swiper.8.4.7.js"></script>
+        <script src="./js/jquery.3.1.1.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <!-- 헤더 -->
+            <div id="header" class="header">
+                <a href="./main.html" class="haeder__menu-btn" title="메뉴"></a>
+                <h2 class="layer-header__title">FAQ</h2>
+            </div>
+
+            <!-- 컨턴츠 -->
+            <div id="container">
+                <div class="content">
+                    <div class="fit-cont">
+                        <div class="cont-block block-shadow-top">
+                            <div class="product-basket__item qna">
+                                <div class="product-basket__quan">
+                                    <div class="product-basket__left">
+                                        <p class="product-basket__title">
+                                            Q. 비회원으로 주문이 가능한가요?
+                                        </p>
+                                    </div>
+                                    <button
+                                        class="product-basket__right"
+                                        title="faq 토클 바튼"
+                                        type="button"
+                                    >
+                                        <img
+                                            src="./img/assets/ico-angle-toggle.svg"
+                                            alt="화살표 아이콘"
+                                        />
+                                    </button>
+                                </div>
+                                <div class="product-basket__item-answer">
+                                    비회원 주문은 불가합니다.
+                                </div>
+                            </div>
+                            <div class="product-basket__item qna">
+                                <div class="product-basket__quan">
+                                    <div class="product-basket__left">
+                                        <p class="product-basket__title">
+                                            Q. 주문하는 방법
+                                        </p>
+                                    </div>
+                                    <button
+                                        class="product-basket__right"
+                                        title="faq 토클 바튼"
+                                        type="button"
+                                    >
+                                        <img
+                                            src="./img/assets/ico-angle-toggle.svg"
+                                            alt="화살표 아이콘"
+                                        />
+                                    </button>
+                                </div>
+                                <div class="product-basket__item-answer">
+                                    주문 하시려는 상품 상세 클릭 후 주문하기
+                                    버튼을 클릭하여 수량을 선택해주세요.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).on('click', '.product-basket__quan', function () {
+                $(this).toggleClass('open');
+            });
+        </script>
+        <script src="./js/common.js"></script>
+    </body>
+</html>
