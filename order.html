@@ -76,7 +76,7 @@
 
                     <div class="fit-cont">
                         <!-- 주문서 타이틀 -->
-                        <div class="cont-block block-shadow-top">
+                        <!-- <div class="cont-block block-shadow-top">
                             <div class="product-basket__item">
                                 <div class="product-basket__left">
                                     <p class="product-basket__title">상품명</p>
@@ -99,7 +99,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- 주문서 -->
                         <div
@@ -124,13 +124,15 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field"
-                                                        value="0"
+                                                        class="product-basket__quan-field"
+                                                        placeholder="박스"
+                                                        value=""
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                         type="text"
                                                         id="quantity-box-item01"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-box-item01"
                                                         >박스</label
                                                     >
@@ -139,13 +141,15 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field"
-                                                        value="0"
+                                                        class="product-basket__quan-field"
+                                                        placeholder="병"
+                                                        value=""
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                         type="text"
                                                         id="quantity-bottle-item01"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-bottle-item01"
                                                         >병</label
                                                     >
@@ -170,13 +174,15 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field"
-                                                        value="0"
+                                                        class="product-basket__quan-field"
+                                                        placeholder="박스"
+                                                        value=""
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                         type="text"
                                                         id="quantity-box-item02"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-box-item02"
                                                         >박스</label
                                                     >
@@ -185,13 +191,15 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field"
-                                                        value="0"
+                                                        class="product-basket__quan-field"
+                                                        placeholder="병"
+                                                        value=""
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                         type="text"
                                                         id="quantity-bottle-item02"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-bottle-item02"
                                                         >병</label
                                                     >
@@ -216,13 +224,15 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field"
-                                                        value="0"
+                                                        class="product-basket__quan-field"
+                                                        placeholder="박스"
+                                                        value=""
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                         type="text"
                                                         id="quantity-box-item03"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-box-item03"
                                                         >박스</label
                                                     >
@@ -231,13 +241,13 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field click"
+                                                        class="product-basket__quan-field click"
                                                         value="7"
                                                         type="text"
                                                         id="quantity-bottle-item03"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-bottle-item03"
                                                         >병</label
                                                     >
@@ -305,13 +315,15 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field"
-                                                        value="0"
+                                                        class="product-basket__quan-field"
+                                                        placeholder="박스"
+                                                        value=""
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                         type="text"
                                                         id="quantity-box-item04"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-box-item04"
                                                         >박스</label
                                                     >
@@ -320,13 +332,15 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field"
-                                                        value="0"
+                                                        class="product-basket__quan-field"
+                                                        placeholder="병"
+                                                        value=""
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                         type="text"
                                                         id="quantity-bottle-item04"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-bottle-item04"
                                                         >병</label
                                                     >
@@ -351,13 +365,15 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field"
-                                                        value="0"
+                                                        class="product-basket__quan-field"
+                                                        placeholder="박스"
+                                                        value=""
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                         type="text"
                                                         id="quantity-box-item05"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-box-item05"
                                                         >박스</label
                                                     >
@@ -366,13 +382,15 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field"
-                                                        value="0"
+                                                        class="product-basket__quan-field"
+                                                        placeholder="병"
+                                                        value=""
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                         type="text"
                                                         id="quantity-bottle-item05"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-bottle-item05"
                                                         >병</label
                                                     >
@@ -397,13 +415,15 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field"
-                                                        value="0"
+                                                        class="product-basket__quan-field"
+                                                        placeholder="박스"
+                                                        value=""
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                         type="text"
                                                         id="quantity-box-item06"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-box-item06"
                                                         >박스</label
                                                     >
@@ -412,13 +432,15 @@
                                                     class="product-basket__field"
                                                 >
                                                     <input
-                                                        class="product-basket__quan-field quantity__field"
-                                                        value="0"
+                                                        class="product-basket__quan-field"
+                                                        placeholder="병"
+                                                        value=""
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                         type="text"
                                                         id="quantity-bottle-item06"
                                                     />
                                                     <label
-                                                        class="product-basket__quan-label"
+                                                        class="hidden"
                                                         for="quantity-bottle-item06"
                                                         >병</label
                                                     >
@@ -436,16 +458,23 @@
                                         <dt class="basket-foot__title">
                                             총 품목수
                                         </dt>
-                                        <dd class="basket-foot__data">1개</dd>
+                                        <dd class="basket-foot__data">1</dd>
                                     </dl>
                                     <dl class="basket-foot__item">
                                         <dt class="basket-foot__title">
                                             합계수량
                                         </dt>
                                         <dd class="basket-foot__data">
-                                            0 박스
-                                            <span></span>
-                                            7 병
+                                            <div class="product-basket__field">
+                                                <p
+                                                    class="product-basket__quan-field"
+                                                ></p>
+                                            </div>
+                                            <div class="product-basket__field">
+                                                <p
+                                                    class="product-basket__quan-field"
+                                                ></p>
+                                            </div>
                                         </dd>
                                     </dl>
                                 </div>
@@ -626,7 +655,13 @@
                                             class="open-select__list"
                                             id="keyword-sort"
                                         >
-                                            <option value="">주종선택</option>
+                                            <option
+                                                placeholder="병"
+                                                value=""
+                                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                            >
+                                                주종선택
+                                            </option>
                                             <option value="국산맥주">
                                                 국산맥주
                                             </option>
@@ -851,7 +886,7 @@
                         </div>
                     </div>
                     <!-- 주문서 타이틀 -->
-                    <div class="cont-block block-shadow-btm">
+                    <!-- <div class="cont-block block-shadow-btm">
                         <div class="product-basket__item">
                             <div class="product-basket__left">
                                 <p class="product-basket__title">상품명</p>
@@ -874,7 +909,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="cont-block">
                         <div class="product-basket">
@@ -894,26 +929,28 @@
                                         >
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="박스"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-box-item03"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-box-item03"
                                                     >박스</label
                                                 >
                                             </div>
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field click"
+                                                    class="product-basket__quan-field click"
                                                     value="7"
                                                     type="text"
                                                     id="quantity-bottle-item03"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-bottle-item03"
                                                     >병</label
                                                 >
@@ -974,26 +1011,30 @@
                                         >
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="박스"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-box-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-box-item01"
                                                     >박스</label
                                                 >
                                             </div>
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="병"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-bottle-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-bottle-item01"
                                                     >병</label
                                                 >
@@ -1016,26 +1057,30 @@
                                         >
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="박스"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-box-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-box-item01"
                                                     >박스</label
                                                 >
                                             </div>
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="병"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-bottle-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-bottle-item01"
                                                     >병</label
                                                 >
@@ -1058,26 +1103,30 @@
                                         >
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="박스"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-box-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-box-item01"
                                                     >박스</label
                                                 >
                                             </div>
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="병"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-bottle-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-bottle-item01"
                                                     >병</label
                                                 >
@@ -1100,26 +1149,30 @@
                                         >
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="박스"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-box-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-box-item01"
                                                     >박스</label
                                                 >
                                             </div>
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="병"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-bottle-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-bottle-item01"
                                                     >병</label
                                                 >
@@ -1142,26 +1195,30 @@
                                         >
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="박스"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-box-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-box-item01"
                                                     >박스</label
                                                 >
                                             </div>
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="병"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-bottle-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-bottle-item01"
                                                     >병</label
                                                 >
@@ -1184,26 +1241,30 @@
                                         >
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="박스"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-box-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-box-item01"
                                                     >박스</label
                                                 >
                                             </div>
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="병"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-bottle-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-bottle-item01"
                                                     >병</label
                                                 >
@@ -1226,26 +1287,30 @@
                                         >
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="박스"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-box-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-box-item01"
                                                     >박스</label
                                                 >
                                             </div>
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="병"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-bottle-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-bottle-item01"
                                                     >병</label
                                                 >
@@ -1268,26 +1333,30 @@
                                         >
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="박스"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-box-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-box-item01"
                                                     >박스</label
                                                 >
                                             </div>
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="병"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-bottle-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-bottle-item01"
                                                     >병</label
                                                 >
@@ -1310,26 +1379,30 @@
                                         >
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="박스"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-box-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-box-item01"
                                                     >박스</label
                                                 >
                                             </div>
                                             <div class="product-basket__field">
                                                 <input
-                                                    class="product-basket__quan-field quantity__field"
-                                                    value="0"
+                                                    class="product-basket__quan-field"
+                                                    placeholder="병"
+                                                    value=""
+                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                                                     type="text"
                                                     id="quantity-bottle-item01"
                                                 />
                                                 <label
-                                                    class="product-basket__quan-label"
+                                                    class="hidden"
                                                     for="quantity-bottle-item01"
                                                     >병</label
                                                 >
@@ -1356,21 +1429,62 @@
             </div>
         </div>
         <script>
-            // 빈 리스트 데모
-            $(document).on('click', '.data-head__sort-item', function () {
-                if ($(this).data().sort == 'etc') {
-                    const el =
-                        '<li class="product-basket__empty">' +
-                        '<img class="product-basket__empty-img" src="./img/assets/img-empty.svg" alt="리스트 없음" />' +
-                        '<p class="product-basket__empty-copy">등록된 상품 정보가 없습니다.' +
-                        '<br/>거래하시는 도매상에 문의하시기 바랍니다.</p>' +
-                        '</li>';
+            // 입력 값 및 click 클래스에 따라 text-align 조정
+            function updateInputStyles() {
+                const inputs = document.getElementsByClassName(
+                    'product-basket__quan-field'
+                );
 
-                    $('.product-basket__item').remove();
-                    $('.product-basket__list').append(el);
+                for (let i = 0; i < inputs.length; i++) {
+                    const hasValue = inputs[i].value !== '';
+                    const hasClick = inputs[i].classList.contains('click');
+
+                    inputs[i].style.textAlign =
+                        hasValue || hasClick ? 'end' : 'center';
+                }
+            }
+
+            // 인풋 외 영역 클릭 시: click 클래스 제거 + 정렬 초기화
+            document.addEventListener('click', function (event) {
+                const isInput = event.target.classList.contains(
+                    'product-basket__quan-field'
+                );
+
+                if (!isInput) {
+                    const inputs = document.getElementsByClassName(
+                        'product-basket__quan-field'
+                    );
+                    for (let i = 0; i < inputs.length; i++) {
+                        const hasValue = inputs[i].value == '';
+                        const hasClick = inputs[i].classList.contains('click');
+
+                        if (hasClick && !hasValue) {
+                            inputs[i].classList.remove('click');
+                        }
+
+                        if (hasValue) {
+                            inputs[i].classList.remove('click');
+                            inputs[i].style.textAlign = 'center';
+                        }
+                    }
                 }
             });
 
+            // 인풋 클릭 시: 해당 요소에만 click 클래스 적용
+            $(document).on('click', '.product-basket__quan-field', function () {
+                const $this = $(this);
+                const isClick = $this.hasClass('click');
+
+                $('.product-basket__quan-field').removeClass('click');
+                if (!isClick) $this.addClass('click');
+
+                updateInputStyles();
+            });
+
+            // 초기 정렬 처리
+            updateInputStyles();
+
+            // 품목 추가 버튼 클릭
             $(document).on('click', '.btn-open-add-prd', function () {
                 $('.layer-page').addClass('open');
             });
