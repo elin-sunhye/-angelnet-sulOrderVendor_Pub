@@ -555,7 +555,7 @@ input.product-basket__quan-field.click {
     width: 100%;
     position: absolute;
     left: 50%;
-    bottom: -77%;
+    bottom: -36px;
     transform: translateX(-50%);
     padding: 0 20px;
     box-sizing: border-box;
