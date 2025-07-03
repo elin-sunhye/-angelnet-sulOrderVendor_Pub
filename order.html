@@ -218,7 +218,7 @@
                                             <p
                                                 class="product-basket__title order-product-title"
                                             >
-                                                처음처럼(유)신
+                                                2본입프리미엄와인13호이탈리안캡,산타레일라로마
                                             </p>
                                             <p class="product-basket__option">
                                                 유흥 / 330ml / 24병
@@ -1539,6 +1539,27 @@
                     }
                 });
             }
+
+            function boxSz() {
+                $('.product-basket__item.on').each(function () {
+                    const boxHeight = $(this).outerHeight(); // 요소의 실제 높이 (padding 포함)
+
+                    console.log('boxHeight', boxHeight);
+
+                    const $target = $(this).find('.basket__num');
+
+                    // 예: 높이의 절반만큼 bottom을 주고 싶을 때
+                    $target.css('bottom', -36 + 'px');
+
+                    // 또는 일정 기준 이상일 때만 조정
+                    // if (boxHeight > 300) {
+                    //   $target.css('bottom', '100px');
+                    // } else {
+                    //   $target.css('bottom', '50px');
+                    // }
+                });
+            }
+            boxSz();
             fontSz();
         </script>
         <script src="./js/common.js"></script>
