@@ -19,7 +19,7 @@
         <meta property="og:description" content="술오더" />
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/devices/mobile.css" />
+        <link rel="stylesheet" href="./css/response.css" />
         <link rel="stylesheet" href="./css/swiper.css" />
         <script src="./js/swiper.8.4.7.js"></script>
         <script src="./js/jquery.3.1.1.js"></script>
@@ -109,8 +109,10 @@
                                 <ul class="product-basket__list">
                                     <li class="product-basket__item">
                                         <div class="product-basket__left">
-                                            <p class="product-basket__title">
-                                                처음처럼(유)신
+                                            <p
+                                                class="product-basket__title order-product-title"
+                                            >
+                                                2본입프리미엄와인15호몬테모레나스,옵틱
                                             </p>
                                             <p class="product-basket__option">
                                                 유흥 / 330ml / 24병
@@ -456,13 +458,13 @@
                                 <div class="basket-foot__box">
                                     <dl class="basket-foot__item">
                                         <dt class="basket-foot__title">
-                                            총 품목수
+                                            품목계
                                         </dt>
                                         <dd class="basket-foot__data">1</dd>
                                     </dl>
                                     <dl class="basket-foot__item">
                                         <dt class="basket-foot__title">
-                                            합계수량
+                                            수량계
                                         </dt>
                                         <dd class="basket-foot__data">
                                             <div class="product-basket__field">
@@ -1488,6 +1490,16 @@
             $(document).on('click', '.btn-open-add-prd', function () {
                 $('.layer-page').addClass('open');
             });
+
+            function fontSz() {
+                $('.order-product-title').each(function () {
+                    if ($(this).text().length > 10) {
+                        $(this).css('font-size', '14px');
+                    }
+                });
+            }
+
+            fontSz();
         </script>
         <script src="./js/common.js"></script>
     </body>

@@ -392,6 +392,7 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    gap: 5px;
     border-bottom: 1px solid #eee;
     background-color: #fff;
     transition: All 0.2s ease-out;
@@ -432,6 +433,9 @@
 .product-basket__left {
     flex: 1;
 }
+.order-product-left {
+    /* width: ; */
+}
 
 /* .product-basket__right {
     flex: 0 0 164px;
@@ -442,6 +446,12 @@
     font-size: 18px;
     font-weight: 800;
     line-height: normal;
+}
+
+.order-product-title {
+    max-width: 300px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .product-basket__option {
@@ -614,7 +624,7 @@ input.product-basket__quan-field.click {
 
 .basket-foot__title {
     color: #333;
-    width: 80px;
+    width: 60px;
     font-size: 18px;
     font-weight: 800;
     line-height: normal;
