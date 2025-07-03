@@ -1528,8 +1528,8 @@
             function fontSz() {
                 $('.order-product-title').each(function () {
                     const textOnly = $(this)
-                        .clone() // 복사해서
-                        .children() // 자식 요소 제거
+                        .clone()
+                        .children()
                         .remove()
                         .end()
                         .text()
