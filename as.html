@@ -36,154 +36,182 @@
             <!-- 컨턴츠 -->
             <div id="container">
                 <div class="content">
-                    <div class="fit-cont">
-                        <div class="cont-block block-shadow-top">
-                            <div class="block-form as">
-                                <div class="block-form__row">
-                                    <div class="block-form__label">
-                                        <p class="block-form__label-text">
-                                            도매상
-                                        </p>
-                                    </div>
-                                    <div class="block-form__field">
-                                        <input
-                                            type="text"
-                                            id="company"
-                                            disabled
-                                            value="엔젤주류상사 (Test)"
-                                        />
-                                        <label for="company">도매상</label>
-                                    </div>
+                    <div class="cont-block block-shadow-top">
+                        <div class="block-form as">
+                            <div class="block-form__row">
+                                <div class="block-form__label">
+                                    <p class="block-form__label-text">도매상</p>
                                 </div>
-                                <div class="block-form__row">
-                                    <div class="block-form__label">
-                                        <p class="block-form__label-text">
-                                            구분
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="block-form__field block-form__field--date"
-                                    >
-                                        <div class="search-keyword">
-                                            <div
-                                                class="search-keyword__left open-select"
+                                <div class="block-form__field">
+                                    <input
+                                        type="text"
+                                        id="company"
+                                        disabled
+                                        value="엔젤주류상사 (Test)"
+                                    />
+                                    <label for="company">도매상</label>
+                                </div>
+                            </div>
+                            <div class="block-form__row">
+                                <div class="block-form__label">
+                                    <p class="block-form__label-text">
+                                        A/S구분
+                                    </p>
+                                </div>
+                                <div class="block-form__field">
+                                    <div class="search-keyword">
+                                        <div
+                                            class="search-keyword__left open-select"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="search-keyword__sort open-select__btn"
                                             >
-                                                <button
-                                                    type="button"
-                                                    class="search-keyword__sort open-select__btn"
+                                                구분선택
+                                            </button>
+                                            <div class="hidden">
+                                                <select
+                                                    class="open-select__list"
+                                                    id="keyword-sort"
                                                 >
-                                                    구분선택
-                                                </button>
-                                                <div class="hidden">
-                                                    <select
-                                                        class="open-select__list"
-                                                        id="keyword-sort"
-                                                    >
-                                                        <option value="">
-                                                            구분선택
-                                                        </option>
-                                                        <option
-                                                            value="국산맥주"
-                                                        >
-                                                            국산맥주
-                                                        </option>
-                                                        <option
-                                                            value="수입맥주"
-                                                        >
-                                                            수입맥주
-                                                        </option>
-                                                        <option
-                                                            value="증류식소주"
-                                                        >
-                                                            증류식소주
-                                                        </option>
-                                                        <option value="민속주">
-                                                            민속주
-                                                        </option>
-                                                        <option value="전통주">
-                                                            전통주
-                                                        </option>
-                                                        <option value="위스키">
-                                                            위스키
-                                                        </option>
-                                                        <option value="보드카">
-                                                            보드카
-                                                        </option>
-                                                        <option value="리큐르">
-                                                            리큐르
-                                                        </option>
-                                                        <option value="와인">
-                                                            와인
-                                                        </option>
-                                                        <option
-                                                            value="일본사케"
-                                                        >
-                                                            일본사케
-                                                        </option>
-                                                        <option value="청주">
-                                                            청주
-                                                        </option>
-                                                        <option value="중국술">
-                                                            중국술
-                                                        </option>
-                                                        <option value="고량주">
-                                                            고량주
-                                                        </option>
-                                                        <option value="탁주">
-                                                            탁주
-                                                        </option>
-                                                        <option
-                                                            value="기타제재주"
-                                                        >
-                                                            기타제재주
-                                                        </option>
-                                                        <option value="무알콜">
-                                                            무알콜
-                                                        </option>
-                                                    </select>
-                                                </div>
+                                                    <option value="">
+                                                        구분선택
+                                                    </option>
+                                                    <option value="국산맥주">
+                                                        국산맥주
+                                                    </option>
+                                                    <option value="수입맥주">
+                                                        수입맥주
+                                                    </option>
+                                                    <option value="증류식소주">
+                                                        증류식소주
+                                                    </option>
+                                                    <option value="민속주">
+                                                        민속주
+                                                    </option>
+                                                    <option value="전통주">
+                                                        전통주
+                                                    </option>
+                                                    <option value="위스키">
+                                                        위스키
+                                                    </option>
+                                                    <option value="보드카">
+                                                        보드카
+                                                    </option>
+                                                    <option value="리큐르">
+                                                        리큐르
+                                                    </option>
+                                                    <option value="와인">
+                                                        와인
+                                                    </option>
+                                                    <option value="일본사케">
+                                                        일본사케
+                                                    </option>
+                                                    <option value="청주">
+                                                        청주
+                                                    </option>
+                                                    <option value="중국술">
+                                                        중국술
+                                                    </option>
+                                                    <option value="고량주">
+                                                        고량주
+                                                    </option>
+                                                    <option value="탁주">
+                                                        탁주
+                                                    </option>
+                                                    <option value="기타제재주">
+                                                        기타제재주
+                                                    </option>
+                                                    <option value="무알콜">
+                                                        무알콜
+                                                    </option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="block-form__row">
-                                    <div class="block-form__label">
-                                        <p class="block-form__label-text">
-                                            제품명
-                                        </p>
-                                    </div>
-                                    <div class="block-form__field">
-                                        <input type="text" id="text" />
-                                        <label for="text">제품명</label>
+                            </div>
+                            <div class="block-form__row">
+                                <div class="block-form__label">
+                                    <p class="block-form__label-text">제품명</p>
+                                </div>
+                                <div class="block-form__field">
+                                    <div class="search-keyword">
+                                        <div
+                                            class="search-keyword__left open-select"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="search-keyword__sort open-select__btn"
+                                            >
+                                                제품명 선택
+                                            </button>
+                                            <div class="hidden">
+                                                <select
+                                                    class="open-select__list"
+                                                    id="keyword-sort"
+                                                >
+                                                    <option value="">
+                                                        제품명 선택
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="block-form__row">
-                                    <div class="block-form__label">
-                                        <p class="block-form__label-text">
-                                            TEL
-                                        </p>
+                            </div>
+                            <div class="block-form__row">
+                                <div class="block-form__label">
+                                    <p class="block-form__label-text">
+                                        수리업체
+                                    </p>
+                                </div>
+                                <div class="block-form__field">
+                                    <div class="search-keyword repair_comp">
+                                        <div
+                                            class="search-keyword__left open-select"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="search-keyword__sort open-select__btn"
+                                            >
+                                                업체 선택
+                                            </button>
+                                            <div class="hidden">
+                                                <select
+                                                    class="open-select__list"
+                                                    id="keyword-sort"
+                                                >
+                                                    <option value="">
+                                                        업체 선택
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
+
                                     <div class="block-form__field">
                                         <input type="tel" id="tel" />
                                     </div>
                                 </div>
-                                <div class="block-form__row textarea">
-                                    <div class="block-form__label">
-                                        <p class="block-form__label-text">
-                                            신청내역
-                                        </p>
-                                    </div>
-                                    <div class="block-form__field">
-                                        <!-- <span class="block-form__label-length"
+                            </div>
+                            <div class="block-form__row textarea">
+                                <div class="block-form__label">
+                                    <p class="block-form__label-text">
+                                        신청내역
+                                    </p>
+                                </div>
+                                <div class="block-form__field">
+                                    <!-- <span class="block-form__label-length"
                                             >0/200자</span
                                         > -->
-                                        <textarea
-                                            id="desc"
-                                            placeholder="내용을 입력해주세요."
-                                        ></textarea>
-                                    </div>
+                                    <textarea
+                                        id="desc"
+                                        placeholder="내용을 입력해주세요."
+                                    ></textarea>
                                 </div>
-                                <!-- <ul class="block-form__noti">
+                            </div>
+                            <!-- <ul class="block-form__noti">
                                     <li class="block-form__noti-text">
                                         ※ 주문수량과 주판계산서 수량은 재고 부족
                                         등의 사유로 차이가 날 수 있습니다.
@@ -191,7 +219,6 @@
                                         주세요.
                                     </li>
                                 </ul> -->
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -199,7 +226,15 @@
 
             <!-- 하단 고정 버튼 -->
             <div class="fixed-btn">
-                <a href="#" class="btn-basic btn-large btn-main">신청</a>
+                <button type="button" class="btn-border btn-large">
+                    초기화
+                </button>
+                <a href="./as-detail.html" class="btn-border btn-large"
+                    >내역조회</a
+                >
+                <a href="./as-detail.html" class="btn-basic btn-large btn-main"
+                    >수리접수</a
+                >
             </div>
         </div>
         <script>

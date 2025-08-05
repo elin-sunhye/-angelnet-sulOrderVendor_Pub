@@ -720,6 +720,10 @@ input.product-basket__quan-field.click {
 }
 
 .block-form__field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
     width: calc(100% - 90px);
     position: relative;
 }
@@ -771,6 +775,9 @@ input.product-basket__quan-field.click {
     background-color: #fff;
     pointer-events: none;
 } */
+.block-form__field .search-keyword.repair_comp {
+    width: 85px;
+}
 
 .block-form__field textarea {
     padding: 13px;
@@ -1951,4 +1958,30 @@ input.product-basket__quan-field.click {
 }
 .as .block-form__row.textarea {
     margin-top: 0;
+}
+.as.detail {
+    padding-bottom: 0;
+}
+.as.detail .block-form__row.textarea {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.as.detail .block-form__field button,
+.as.detail .block-form__field span {
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+.as.detail .block-form__field button.cancel {
+    background-color: #eb5a41;
+    color: white;
+}
+.as.detail .block-form__field span.complete {
+    border: 1px solid #2a47bf;
+    color: #2a47bf;
+}
+.as.detail .block-form__field span.cancel {
+    border: 1px solid #eb5a41;
+    color: #eb5a41;
 }
