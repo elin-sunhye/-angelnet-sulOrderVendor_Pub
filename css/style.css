@@ -289,6 +289,7 @@
     background-color: #fff;
     min-width: 300px;
     overflow-y: auto;
+    /* padding-bottom: 10px; */
 }
 
 .page-tab__item {
@@ -401,7 +402,7 @@
     -o-transition: All 0.2s ease-out;
 }
 
-.product-basket__item.new .product-basket__title::before {
+.product-basket__item.new .product-basket__title::after {
     content: 'NEW';
 
     display: inline-block;
@@ -415,7 +416,7 @@
 
     background-color: #a34546;
 
-    vertical-align: text-top;
+    vertical-align: middle;
 }
 
 .product-basket__item:hover {
@@ -442,7 +443,7 @@
 } */
 
 .product-basket__title {
-    color: #000;
+    color: #333;
     font-size: 18px;
     font-weight: 800;
     line-height: normal;
@@ -691,7 +692,7 @@ input.product-basket__quan-field.click {
 }
 
 .block-form__label-text {
-    color: #000;
+    color: #333;
     font-size: 15px;
     font-weight: 600;
     line-height: normal;
@@ -902,7 +903,7 @@ input.product-basket__quan-field.click {
 }
 
 .search-filter__title {
-    color: #000;
+    color: #333;
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
@@ -1129,12 +1130,25 @@ input.product-basket__quan-field.click {
     background-size: contain;
 }
 
-.list-header__noti {
+.list-header__sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     color: #999;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     padding-left: 21px;
     position: relative;
+}
+.list-header__sort::before {
+    content: '';
+    width: 16px;
+    height: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/assets/ico-sort.svg') no-repeat 0 0 / cover;
 }
 
 .list-header__noti--table {
@@ -1156,44 +1170,40 @@ input.product-basket__quan-field.click {
 }
 
 .order-status__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #eee;
-    padding: 20px var(--base-page-padding);
+    padding: 7px var(--base-page-padding);
 }
-.order-status__item.cancel-padding {
+.order-status__item.total {
+    background-color: #eee;
+}
+/* .order-status__item.cancel-padding {
     padding-bottom: 8px;
-}
+} */
 .order-status__item .btn-cancel {
     background-color: #eb5a41;
     color: #fff;
     padding: 3px 0;
     border-radius: 5px;
 }
-.order-status__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.order-status__btm {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px dashed #eee;
-}
 
 .order-status__date {
-    color: #000;
+    color: #333;
     font-size: 14px;
     font-weight: 600;
 }
 
-.order-status__title {
+.order-status__link {
     color: #333;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 1.4em;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.order-status__link span {
+    font-size: 13px;
+    color: #999;
 }
 
 .order-status__label {
@@ -1238,137 +1248,91 @@ input.product-basket__quan-field.click {
     color: #eb5a41;
 }
 
-.order-status__left {
-    display: flex;
-    align-items: center;
-}
-
-.ordered-list__item {
-    padding: 20px var(--base-page-padding);
-    border-bottom: 1px solid #eee;
-    display: flex;
-    align-items: center;
-}
-
-.ordered-list__left {
-    flex: 1;
-    min-width: 0px;
-}
-
-.ordered-list__right {
-    flex: 0 0 151px;
-    display: flex;
-}
-
-.ordered-list__title {
+/* 조회 상세 */
+.ordered-detail_title {
     color: #333;
     font-size: 15px;
     font-weight: 500;
     line-height: normal;
 }
-
-.ordered-list__option {
-    margin-top: 8px;
-    color: #666;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.ordered-list__frame {
-    border-radius: 4px;
-    border: 1px solid #dedede;
+.detail-product-basket__right {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 11px;
+    gap: 6px;
+}
+.detail-product-basket__right p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 73px;
     height: 40px;
-}
-
-.ordered-list__frame + .ordered-list__frame {
-    margin-left: 5px;
-}
-
-.ordered-list__quan {
-    color: #000;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.ordered-list__label {
-    color: #888;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.board-toggle__head {
-    border-bottom: 1px solid #eee;
-    padding: 20px var(--base-page-padding) 18px;
-    position: relative;
-}
-
-.board-toggle__head::after {
-    content: '';
-    position: absolute;
-    right: 20px;
-    width: 12px;
-    height: 8px;
-    top: 50%;
-    transform: translateY(-50%) rotate(0);
-    background-image: url(../img/assets/ico-angle-toggle.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: All 0.3s ease-out;
-    -webkit-transition: All 0.3s ease-out;
-    -moz-transition: All 0.3s ease-out;
-    -o-transition: All 0.3s ease-out;
-}
-
-.open .board-toggle__head::after {
-    transform: translateY(-50%) rotate(180deg);
-}
-
-.board-toggle__title {
+    padding: 6px;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
     color: #333;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 20px; /* 133.333% */
+    background-color: #fff;
+    transition: All 0.2s ease-out;
+}
+.detail-product-basket__right p.gray {
+    color: #888;
 }
 
-.board-toggle__date {
-    color: #999;
+/* 통계 */
+.analysis-list__title {
+    width: 100%;
+}
+.analysis-list__title p {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+.analysis-list__title span {
     font-size: 13px;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 10px;
+    color: #999;
+    font-weight: bold;
 }
-
-.board-toggle__body {
-    height: 0;
-    overflow: hidden;
-    transition: All 0.3s ease-out;
-    -webkit-transition: All 0.3s ease-out;
-    -moz-transition: All 0.3s ease-out;
-    -o-transition: All 0.3s ease-out;
+.analysis-list__detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
 }
-
-.board-toggle__box {
-    border-bottom: 1px solid #eee;
-    background-color: #f5f6f8;
-    padding: 18px var(--base-page-padding) 20px;
-}
-
-.board-toggle__cont {
-    color: #666;
+.analysis-list__detail p {
     font-size: 14px;
-    font-weight: 400;
-    line-height: 22px; /* 157.143% */
+}
+.analysis-list__detail p span {
+    margin-right: 3px;
+}
+.analysis-list__detail p span:last-of-type {
+    margin-left: 10px;
 }
 
+/* 주판계산서 */
+.abacus-list__detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.abacus-list__detail p {
+    width: 100px;
+    font-size: 14px;
+}
+/* .abacus-list__detail p:nth-of-type(2) {
+    text-align: center;
+} */
+.abacus-list__detail p:last-of-type {
+    text-align: right;
+}
+.abacus-list__detail p span {
+    margin-right: 3px;
+}
+
+/* login */
 .login {
     position: fixed;
     top: 0;
@@ -1486,7 +1450,7 @@ input.product-basket__quan-field.click {
 }
 
 .login-select__copy {
-    color: #000;
+    color: #333;
     /* text-align: center; */
     font-size: 16px;
     font-weight: 500;
@@ -1551,7 +1515,7 @@ input.product-basket__quan-field.click {
 }
 
 .modal-alert__text {
-    color: #000;
+    color: #333;
     font-size: 15px;
     font-weight: 500;
     line-height: 22px;
@@ -1608,7 +1572,7 @@ input.product-basket__quan-field.click {
 }
 
 .partner-list__date {
-    color: #000;
+    color: #333;
     font-size: 15px;
     font-weight: 600;
     line-height: normal;
@@ -1659,7 +1623,7 @@ input.product-basket__quan-field.click {
 }
 
 .partner-detail__name {
-    color: #000;
+    color: #333;
     font-size: 17px;
     font-weight: 700;
     line-height: 26px; /* 152.941% */
@@ -1801,7 +1765,7 @@ input.product-basket__quan-field.click {
 }
 
 .prd-list__title {
-    color: #000;
+    color: #333;
     font-size: 16px;
     font-weight: 700;
     line-height: normal;
@@ -1868,7 +1832,7 @@ input.product-basket__quan-field.click {
 }
 
 .prd-detail-top__name {
-    color: #000;
+    color: #333;
     font-size: 20px;
     font-weight: 700;
     line-height: normal;

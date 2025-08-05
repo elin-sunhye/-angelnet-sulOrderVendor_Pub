@@ -238,7 +238,7 @@
 }
 
 .menu-list__title {
-    color: #000;
+    color: #333;
     font-size: 17px;
     font-weight: 700;
     line-height: normal;
@@ -312,7 +312,7 @@
 }
 
 .current .menu-bar__link {
-    color: #000;
+    color: #333;
 }
 
 .menu-bar__icon {

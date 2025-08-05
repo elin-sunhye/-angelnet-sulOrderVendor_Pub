@@ -47,29 +47,30 @@
                         <ul class="page-tab__list">
                             <li class="page-tab__item">
                                 <a
-                                    href="order.html"
+                                    href="./order.html"
                                     class="page-tab__link current"
-                                    >주류주문</a
+                                    >주문</a
                                 >
                             </li>
                             <li class="page-tab__item">
-                                <a href="#" class="page-tab__link"
-                                    >주판계산서</a
-                                >
-                            </li>
-                            <li class="page-tab__item">
-                                <a href="status.html" class="page-tab__link"
+                                <a href="./status.html" class="page-tab__link"
                                     >조회</a
                                 >
                             </li>
                             <li class="page-tab__item">
-                                <a href="#" class="page-tab__link">통계</a>
+                                <a href="./analysis.html" class="page-tab__link"
+                                    >통계</a
+                                >
                             </li>
                             <li class="page-tab__item">
-                                <a href="#" class="page-tab__link">공지</a>
+                                <a href="./abacus.html" class="page-tab__link"
+                                    >주판</a
+                                >
                             </li>
                             <li class="page-tab__item">
-                                <a href="#" class="page-tab__link">차입</a>
+                                <a href="./borrowed.html" class="page-tab__link"
+                                    >차입</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -1524,35 +1525,6 @@
             $(document).on('click', '.btn-open-add-prd', function () {
                 $('.layer-page').addClass('open');
             });
-
-            function fontSz() {
-                $('.order-product-title').each(function () {
-                    const textOnly = $(this)
-                        .clone()
-                        .children()
-                        .remove()
-                        .end()
-                        .text()
-                        .trim();
-                    if (textOnly.length > 10) {
-                        $(this).css('font-size', '14px');
-                    }
-                });
-            }
-
-            // function boxSz() {
-            //     $('.product-basket__item.on').each(function () {
-            //         const boxHeight = $(this).outerHeight();
-
-            //         console.log('boxHeight', boxHeight);
-
-            //         const $target = $(this).find('.basket__num');
-
-            //         $target.css('bottom', -36 + 'px');
-            //     });
-            // }
-            // boxSz();
-            fontSz();
         </script>
         <script src="./js/common.js"></script>
     </body>

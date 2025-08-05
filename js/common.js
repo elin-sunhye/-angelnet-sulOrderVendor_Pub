@@ -147,6 +147,24 @@ var mainSlider = new Swiper(
     }
 );
 
+// 글자수에 따라 폰트 사이즈 조정
+function fontSz() {
+    $('.order-product-title').each(function () {
+        const textOnly = $(this)
+            .clone()
+            .children()
+            .remove()
+            .end()
+            .text()
+            .trim();
+        if (textOnly.length > 10) {
+            $(this).css('font-size', '14px');
+        }
+    });
+}
+
+fontSz();
+
 var mainBannerSlider = new Swiper(
     '.main-banner-slider .main-banner-slider-wrap',
     {
@@ -373,26 +391,6 @@ $(document).on('click', '.search-filter__btn', function () {
     $(this).addClass('current');
 });
 
-$(document).on('click', '.board-toggle__head', function () {
-    const thisItem = $(this).closest('.board-toggle__item');
-    const isOpen = $(thisItem).hasClass('open');
-    const thisBody = $(thisItem).find('.board-toggle__body');
-    const thisCont = $(thisItem).find('.board-toggle__box');
-    const thisContHeight = $(thisCont).outerHeight();
-
-    if (isOpen) {
-        thisItem.removeClass('open');
-        $(thisBody).css({
-            height: 0,
-        });
-    } else {
-        thisItem.addClass('open');
-        $(thisBody).css({
-            height: thisContHeight,
-        });
-    }
-});
-
 // 모달 알럿 닫기
 $(document).on('click', '.modal-alert__btn', function () {
     $('.modal-alert').removeClass('open');
@@ -430,4 +428,15 @@ var thumbSlider = new Swiper('.detail-thumb .detail-thumb__slider', {
 // 좋아요 누르기
 $(document).on('click', '.btn-like', function () {
     $(this).toggleClass('like');
+});
+
+// 인기순 최신순
+$(document).on('click', '.list-header__sort', function () {
+    let currentText = $(this).text().trim();
+
+    if (currentText === '최신순') {
+        $(this).text('인기순');
+    } else {
+        $(this).text('최신순');
+    }
 });
