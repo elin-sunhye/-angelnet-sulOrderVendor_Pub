@@ -613,9 +613,14 @@ input.product-basket__quan-field.click {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     /* border: 1px solid #25398F; */
 }
-
+.basket-foot__box .product-basket__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .basket-foot__item {
     display: flex;
     justify-content: space-between;
@@ -632,7 +637,7 @@ input.product-basket__quan-field.click {
 }
 
 .basket-foot__data {
-    display: flex;
+    display: inline-flex;
     gap: 5px;
     color: #25398f;
     font-size: 16px;
@@ -1312,10 +1317,16 @@ input.product-basket__quan-field.click {
     font-size: 14px;
 }
 .analysis-list__detail p span {
-    margin-right: 3px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30px;
+    text-align: right;
+    color: #333;
+    padding-top: 5px;
 }
 .analysis-list__detail p span:last-of-type {
     margin-left: 10px;
+    border-left: 1px solid #ddd;
 }
 
 /* 주판계산서 */
@@ -1326,12 +1337,11 @@ input.product-basket__quan-field.click {
     margin-top: 5px;
 }
 .abacus-list__detail p {
-    width: 100px;
+    width: calc((100% - 30px) / 3);
     font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
 }
-/* .abacus-list__detail p:nth-of-type(2) {
-    text-align: center;
-} */
 .abacus-list__detail p:last-of-type {
     text-align: right;
 }
