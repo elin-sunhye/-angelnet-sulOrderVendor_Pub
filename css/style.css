@@ -1943,7 +1943,7 @@ input.product-basket__quan-field.click {
     width: 100%;
 }
 
-/* as */
+/* a/s */
 .as {
     display: flex;
     flex-direction: column;
@@ -1994,4 +1994,35 @@ input.product-basket__quan-field.click {
 .as.detail .block-form__field span.cancel {
     border: 1px solid #eb5a41;
     color: #eb5a41;
+}
+.as .calendar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.as .calendar button {
+    font-size: 20px;
+    opacity: 0.5;
+}
+.as .calendar p {
+    line-height: 20px;
+    font-weight: bold;
+}
+.as .calendar-list {
+    font-size: 13px;
+}
+.as .calendar-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.as .calendar-list li span {
+    border-radius: 5px;
+    padding: 1px 8px;
+}
+.as .calendar-list li span.cancel {
+    background-color: #eb5a41;
+    color: white;
 }
