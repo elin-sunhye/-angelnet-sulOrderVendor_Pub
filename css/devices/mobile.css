@@ -15,9 +15,9 @@
     }
 }
 @media screen and (max-width: 364px) {
-    .basket-foot__item {
+    /* .basket-foot__item {
         margin-right: 15px;
-    }
+    } */
     .basket-foot__data span {
         margin: 3px;
     }

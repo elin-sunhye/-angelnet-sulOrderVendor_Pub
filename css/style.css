@@ -1396,7 +1396,7 @@ input.product-basket__quan-field.click {
     border-bottom: 1px solid #e9e9e9;
     width: calc(100% - 75px);
     height: 32px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     line-height: normal;
 }
