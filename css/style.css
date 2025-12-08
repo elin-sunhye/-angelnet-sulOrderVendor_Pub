@@ -1349,6 +1349,56 @@ input.product-basket__quan-field.click {
     margin-right: 3px;
 }
 
+/* 차입 */
+/* 20251208 수정 */
+.borrowed .calendar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.borrowed .calendar button {
+    font-size: 20px;
+    opacity: 0.5;
+}
+.borrowed .calendar p {
+    line-height: 20px;
+    font-weight: bold;
+}
+.borrowed .calendar-list {
+    font-size: 13px;
+}
+.borrowed .calendar-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.borrowed .calendar-list li.total {
+    border-top: 2px solid #eee;
+    padding-top: 5px;
+}
+.borrowed .calendar-list li p:first-of-type {
+    width: 43px;
+}
+.borrowed .calendar-list li p:not(:first-of-type) {
+    text-align: end;
+}
+.borrowed .calendar-list li.carried-current p {
+    color: #5d7cff;
+}
+.borrowed .calendar-list li.borrowed-current p {
+    color: #eb5a41;
+}
+.borrowed .calendar-list li p,
+.borrowed .calendar-list li span {
+    width: calc((100% - 15px - 43px) / 3);
+    border-radius: 5px;
+    padding: 1px 8px;
+    font-weight: bold;
+}
+/* 여기까지 */
+
 /* login */
 .login {
     position: fixed;
