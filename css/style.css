@@ -1392,10 +1392,11 @@ input.product-basket__quan-field.click {
 .borrowed .calendar-list {
   font-size: 13px;
 }
+/* 20260108 수정 */
 .borrowed .calendar-list li {
   display: flex;
   justify-content: space-between;
-  gap: 5px;
+  /* gap: 5px; */
   margin-bottom: 5px;
 }
 .borrowed .calendar-list li.total {
@@ -1403,7 +1404,7 @@ input.product-basket__quan-field.click {
   padding-top: 5px;
 }
 .borrowed .calendar-list li p:first-of-type {
-  width: 43px;
+  width: 32px;
 }
 .borrowed .calendar-list li p:not(:first-of-type) {
   text-align: end;
@@ -1417,11 +1418,12 @@ input.product-basket__quan-field.click {
 
 .borrowed .calendar-list li p,
 .borrowed .calendar-list li span {
-  width: calc((100% - 15px - 43px) / 3);
+  width: calc((100% - 32px) / 3);
   border-radius: 5px;
-  padding: 1px 8px;
+  padding: 1px 3px;
   font-weight: bold;
 }
+/* 여기까지 */
 
 /* login */
 .login {
