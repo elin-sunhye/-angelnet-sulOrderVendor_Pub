@@ -1381,14 +1381,17 @@ input.product-basket__quan-field.click {
   justify-content: center;
   gap: 30px;
 }
+/* 20260113 수정 */
 .borrowed .calendar button {
-  font-size: 20px;
+  font-size: 30px;
   opacity: 0.5;
 }
 .borrowed .calendar p {
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: bold;
 }
+/* 여기까지 */
 .borrowed .calendar-list {
   font-size: 13px;
 }
@@ -2077,14 +2080,17 @@ input.product-basket__quan-field.click {
   gap: 30px;
   margin-bottom: 10px;
 }
+/* 20260113 수정 */
 .as .calendar button {
-  font-size: 20px;
+  font-size: 30px;
   opacity: 0.5;
 }
 .as .calendar p {
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: bold;
 }
+/* 여기까지 */
 .as .calendar-list {
   font-size: 13px;
 }
